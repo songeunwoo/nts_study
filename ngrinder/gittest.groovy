@@ -64,8 +64,9 @@ class TestRunner {
 
     @Test
     public void test(){
+        sleep(100)
         HTTPResponse result = request.GET("http://ngrinder-dev.navercorp.com/script#", params)
-
+        sleep(100)
         if (result.statusCode == 301 || result.statusCode == 302) {
             grinder.logger.warn("Warning. The response may not be correct. The response code was {}.", result.statusCode);
         } else {
