@@ -60,6 +60,6 @@ class TestRunner {
 	@Test
 	public void test(){
 		sleep(100)
-		grinder.logger.info("ngrinder-dev testing..."); 
+		grinder.logger.error("ngrinder-dev testing..."); 
 	}
 }
